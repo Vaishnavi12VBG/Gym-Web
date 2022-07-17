@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            /* color: white;
+            
+            background: url("img/gym6.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100%; */
+        }
+
+        .header {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("img/gym6.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            margin-top: -20px;
+
+
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+
+        }
+
+        .left img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .left div {
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 35%;
+            margin: 20px auto;
+
+        }
+
+        .right {
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 40px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+            margin-top: 42px;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding-left: 34px;
+        }
+
+        .navbar li :hover,
+        .navbar li :active {
+            text-decoration: underline;
+            color: orangered;
+        }
+
+        .btn {
+            margin-top: 0px 9px;
+            font-family: 'Baloo Bhai 2', cursive;
+
+            background-color: red;
+            color: white;
+            padding: 4px 14px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(197, 2, 2);
+        }
+
+        .para {
+            margin-top: 130px;
+            margin-left: 120px;
+            width: 725px;
+            padding-bottom: 98px;
+        }
+
+        .btn2 {
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            margin-right: 4px;
+            margin-top: 10px;
+        }
+
+        .btn2:hover {
+            background-color: rgb(236, 229, 229);
+
+        }
+
+        #section1 {
+            padding: 30px;
+            background-color: rgb(249, 253, 255);
+        }
+
+        .container2 {
+            display: flex;
+            padding: 20px;
+        }
+
+        .box {
+            border: 1px solid black;
+            margin: 20px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .box p {
+            text-indent: 50px;
+            text-align: justify;
+        }
+
+        .boximage {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        #section2 {
+            padding: 30px;
+            text-align: center;
+            background-image: url("img/form-bg.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+
+            /* background-attachment: fixed; */
+
+        }
+
+        .form-container {
+            padding: 7px;
+            color: white;
+        }
+
+        .form-group {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        .input-group {
+            display: block;
+            width: 450px;
+
+
+            font-family: 'Baloo Bhai 2', cursive;
+            padding: 5px;
+            border: 1px solid black;
+            margin: 11px auto;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        .form-label {
+            margin-right: 365px;
+            margin-bottom: 2px;
+            font-size: 18px;
+        }
+
+        .btn3 {
+            padding: 12px;
+            margin-top: 15px;
+            background-color: darkblue;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            width: 20%;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: black;
+            padding: 35px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            opacity: 0.85;
+
+        }
+
+        footer a {
+            text-decoration: none;
+            color: rgb(67, 67, 251);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="section-home">
+        <!-- Left box for logo -->
+
+        <div class="left">
+            <a href="#section-home" style="text-decoration:none;">
+                <img src="img/logo2.png" alt="error loaded image">
+                <div style="color: white;">Fitness Club</div>
+            </a>
+
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#section-home">Home</a></li>
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Fitness Calculation</a></li>
+                <li><a href="#section2">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+
+        <div class="para">
+            <h1>Welcome To Fitness Club...</h1>
+            <p style="text-indent: 75px;text-align: justify;">Gymnasia apparatus like barbells, jumping board, running
+                path, tennis-balls, cricket field, and fencing area are used as exercises. In safe weather, outdoor
+                locations are the most conducive to health.[2] Gyms were popular in ancient Greece. Their curricula
+                included self-defense, gymnastica medica, or physical therapy to help the sick and injured, and for
+                physical fitness and sports, from boxing to dancing to skipping rope.[3]
+
+                Gymnasia also had teachers of wisdom and philosophy. Community gymnastic events were done as part of the
+                celebrations during various village festivals. In ancient Greece there was a phrase of contempt, "He can
+                neither swim nor write." After a while, however, Olympic athletes began training in buildings
+                specifically designed for them.[4] Community sports never became as popular among ancient Romans as it
+                had among the ancient Greeks. Gyms were used more as a preparation for military service or spectator
+                sports. During the Roman Empire, the gymnastic art was forgotten. In the Dark Ages there were sword
+                fighting tournaments and of chivalry; and after gunpowder was invented sword fighting began to be
+                replaced by the sport of fencing, as well as schools of dagger fighting and wrestling and boxing.[5]
+            </p>
+
+            <div class="event">
+                <a href="https://en.wikipedia.org/wiki/Gym" target="_blank"><button class="btn2">More About
+                        Fitness</button></a>
+                <button class="btn2">Let's Start</button>
+            </div>
+        </div>
+    </header>
+    <section id="section1">
+        <h1 style="text-align: center;">More On Fitness Content</h1>
+
+        <div class="container2">
+            <div class="box">
+                <h2>Improve Brain Function</h2>
+                <img src="img/gym.jpg" alt="Error Loaded Image" height="150px" width="300px" class="boximage">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, adipisci doloremque. Voluptatem
+                    aspernatur fugit cumque esse molestias tempore labore provident earum nulla voluptates nisi
+                    assumenda vitae ducimus eos, debitis eum ullam. Perferendis veniam fuga facere atque consequuntur
+                    similique esse, libero quasi, hic, pariatur excepturi molestias eveniet? Veritatis autem eligendi
+                    cum.</p>
+            </div>
+            <div class="box">
+                <h2>Healthy Life</h2>
+                <img src="img/gym2.jpeg" alt="Error Loaded Image" height="150px" width="300px" class="boximage">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, adipisci doloremque. Voluptatem
+                    aspernatur fugit cumque esse molestias tempore labore provident earum nulla voluptates nisi
+                    assumenda vitae ducimus eos, debitis eum ullam. Perferendis veniam fuga facere atque consequuntur
+                    similique esse, libero quasi, hic, pariatur excepturi molestias eveniet? Veritatis autem eligendi
+                    cum.</p>
+            </div>
+            <div class="box">
+                <h2>Fitness Personality</h2>
+                <img src="img/gym3.jpg" alt="Error Loaded Image" height="150px" width="300px" class="boximage">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, adipisci doloremque. Voluptatem
+                    aspernatur fugit cumque esse molestias tempore labore provident earum nulla voluptates nisi
+                    assumenda vitae ducimus eos, debitis eum ullam. Perferendis veniam fuga facere atque consequuntur
+                    similique esse, libero quasi, hic, pariatur excepturi molestias eveniet? Veritatis autem eligendi
+                    cum.</p>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <h1>Join Our Fitness Club</h1>
+        <div class="form-container">
+            <form action="" class="myform">
+                <div class="form-group">
+                    <label for="" class="form-label">First Name</label>
+                    <input type="text" name="" id="" class="input-group" placeholder="First name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-label">Last Name</label>
+                    <input type="text" name="" id="" class="input-group" placeholder="last name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-label">Email Id</label>
+                    <input type="email" name="" id="" class="input-group" placeholder="email id" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-label">Mobile No</label>
+                    <input type="phone" name="" id="" class="input-group" placeholder="mobile no" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-label">City/Village</label>
+                    <input type="text" name="" id="" class="input-group" placeholder="city/village" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-label">Age</label>
+                    <input type="number" name="" id="" class="input-group" placeholder="age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-label">Gender</label>
+                    <select name="" id="" class="input-group" required>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>
+
+                </div>
+                <button type="submit" class="btn3">Join Fitness Club</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>@2022-2023 , www.fitnessclub.com , <a href="#">Privacy & Policy</a></p>
+    </footer>
+
+</body>
+
+</html>
